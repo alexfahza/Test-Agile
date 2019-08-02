@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Test Agile</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.slim.min.js'></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row bg-info text-white">
+			<div class="col-sm-2">Menu</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div id='isConnected' class='unConnected mr-1 mt-1'></div>
+					<div>User Name</div>
+				</div>
+			</div>
+			<div class="col-sm-4">Sales Report</div>
+		</div>
+		<div class="row mt-3 pl-5">
+			<div class="col-sm-3">
+				<div>Categoria: <select name="paretSelect" id='parent'>
+						<option disabled selected value>Selecciona una opcion</option>
+					</select></div>
+
+			</div>
+			<div class="col-sm-4">
+				<div>Producto:
+					<select name="childSelect1" id="child1" class='w-75'>
+						<option disabled selected value>Selecciona una opcion</option>
+					</select>
+				</div>
+
+			</div>
+			<div class="col-sm-5 pl-5">
+				<div >
+					Marca: <select name="childSelect2" id="child2" class='w-50'>
+						<option disabled selected value>Selecciona una opcion</option>
+					</select>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="ml-4 mt-5" id="plotlyChart">
+		<div class="well text-center border border-dark w-75" style="height: 35em; padding-top:15em;margin-left: 10em">
+			<h1>Selecciona una categoria</h1>
+		</div>
+	</div>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src='./index.js'></script>
+</body>
+
+</html>
